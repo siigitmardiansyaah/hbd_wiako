@@ -9,10 +9,14 @@
   <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400" rel="stylesheet">
   <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
   <link rel="stylesheet" href="style/style.css">
+  <script>
+window.onload = function() {
+  var context = new AudioContext();
+}
+</script>
 </head>
 
 <body>
-  <iframe src="silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
   <audio autoplay loop>
       <source src="song.mp3" type="audio/mp3">
   </audio>
