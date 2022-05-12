@@ -13,6 +13,18 @@
 </head>
 
 <body>
+  <script>
+        var yakin = confirm("Mau dipakein lagu ga biar romantis - romantis gitu ? :v");
+
+        if (yakin) {
+           var audio = new Audio('song.mp3');
+              audio.play();        
+        } else {
+            alert('kalo enggak ya tetep pakein lagu atuh yaa');
+           var audio = new Audio('song.mp3');
+    audio.play();
+        }
+    </script>
 <!--   <audio autoplay loop>
       <source src="song.mp3" type="audio/mpeg">
   </audio> -->
@@ -138,9 +150,6 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
 <script type="application/javascript" src="script/main.js"></script>
-  <script>
-    var audio = new Audio('song.mp3');
-    audio.play();
-  </script>
+ 
 
 </html>
