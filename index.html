@@ -17,14 +17,28 @@
         var yakin = confirm("Mau dipakein lagu ga biar romantis - romantis gitu ? :v");
 
         if (yakin) {
-           var audio = new Audio('song.mp3');
-              audio.muted = true;
-              audio.play();
+          var source = "song.mp3"
+ var audio = document.createElement("audio");
+ //
+ audio.autoplay = true;
+ //
+ audio.load()
+ audio.addEventListener("load", function() { 
+     audio.play(); 
+ }, true);
+ audio.src = source;
         } else {
             alert('kalo enggak ya tetep pakein lagu atuh yaa');
-           var audio = new Audio('song.mp3');
-                        audio.muted = true;
-             audio.play();
+          var source = "song.mp3"
+ var audio = document.createElement("audio");
+ //
+ audio.autoplay = true;
+ //
+ audio.load()
+ audio.addEventListener("load", function() { 
+     audio.play(); 
+ }, true);
+ audio.src = source;
         }
     </script>
 <!--   <audio autoplay loop muted>
