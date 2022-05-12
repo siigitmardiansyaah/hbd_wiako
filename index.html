@@ -13,21 +13,23 @@
 </head>
 
 <body>
-<!--   <script>
+  <script>
         var yakin = confirm("Mau dipakein lagu ga biar romantis - romantis gitu ? :v");
 
         if (yakin) {
            var audio = new Audio('https://interactive-examples.mdn.mozilla.net/media/examples/t-rex-roar.mp3');
-              audio.play();        
+              audio.muted = true;
+              audio.play();
         } else {
             alert('kalo enggak ya tetep pakein lagu atuh yaa');
            var audio = new Audio('https://interactive-examples.mdn.mozilla.net/media/examples/t-rex-roar.mp3');
-    audio.play();
+                        audio.muted = true;
+             audio.play();
         }
-    </script> -->
-  <audio autoplay loop muted>
+    </script>
+<!--   <audio autoplay loop muted>
       <source src="song.mp3" type="audio/mpeg">
-  </audio>
+  </audio> -->
   <div class="container">
     <div class="one">
       <h1 class="one">Haii
